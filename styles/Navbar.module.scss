@@ -1,0 +1,25 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+.title{
+max-width: 450px;
+	font-size: clamp(2.5rem, 5vw, 7rem);
+	font-family: 'Mirza', sans-serif;
+	line-height: 0.9em;
+	text-transform: capitalize;
+	color: var(--primary-color);
+}
+.navLinks {
+	display: flex;
+	gap: 3rem;
+	li {
+		display: inline-block;
+	}
+	a {
+		font-size: 1.8rem;
+		display: inline-block;
+	}
+}

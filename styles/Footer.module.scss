@@ -1,0 +1,22 @@
+.footer {
+	background-color: var(--secondary-color);
+	text-align: center;
+	padding: 3rem 0rem;
+	margin-top: 200px;
+	position: sticky;
+}
+.title{
+	max-width: 500px;
+	font-size: clamp(2.5rem, 5vw, 7rem);
+	font-family: 'Mirza', sans-serif;
+	line-height: 0.9em;
+	text-transform: capitalize;
+	margin-left: 170px;
+	text-align: center;
+	align-content: center;
+	color: var(--primary-color);
+}
+.copyright {
+	margin-top: 1.2rem;
+	font-size: 1.2rem;
+}
