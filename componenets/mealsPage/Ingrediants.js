@@ -1,26 +1,37 @@
 import React from 'react'
 import Text from '../text/Text'
 import Title from '../text/Title'
-import styles from '../../styles/Ingrediants.module.scss';
-
+import Image from 'next/image'
+import styles from '../../styles/Ingrediants.module.scss'
+var url = ''
 function Ingredients({ ingredientsWithMeasures }) {
   return (
     <>
       <Title className={styles.title}>Ingredients</Title>
-      <table className={styles.ingredientsTable}>
-        <tbody>
-          {ingredientsWithMeasures.map((ingredient) => (
-            <tr key={ingredient.index}>
-              <td>
-                <Text>{ingredient.ingredient}</Text>
-              </td>
-              <td>
-                <Text>{ingredient.measure}</Text>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+      {ingredientsWithMeasures.map(
+        (ingredient) => (
+          (url = `https://www.themealdb.com/images/ingredients/${ingredient.ingredient}.png`),
+          (
+            <div className={styles.ingdiv}>
+              <Image
+                src={url}
+                height="150"
+                width="150"
+                alt={ingredient.ingredient}
+              />
+              <div className={styles.iname}>
+                <Title className={styles.title} variant="secondary">
+                  {ingredient.ingredient}
+                </Title>
+                <Title className={styles.title} variant="secondary">
+                 ( {ingredient.measure} )
+                </Title>
+              </div>
+            </div>
+          )
+        ),
+      )}
     </>
   )
 }

@@ -1,5 +1,7 @@
 .ingredientsTable {
-	max-width: 500px;
+	max-width: 900px;
+	align-items: center;
+	justify-items: center;
 	width: 100%;
 	border-spacing: 0px;
 	tr {
@@ -12,9 +14,21 @@
 			background-color: rgb(25, 26, 28);
 		}
 		td {
-			padding: 0.5rem;
+			font-size: 50px;
+			padding: 10px 0px 0px 30px;
 		}
 	}
+}
+.iname{
+	gap: 10px;
+	display: block;
+	flex-direction: row;
+}
+.ingdiv{
+	padding: 20px;
+	margin: 30px 20px 0px 0px;
+	display: inline-block;
+	text-align: center;
 }
 .title {
 	margin-bottom: 1rem;

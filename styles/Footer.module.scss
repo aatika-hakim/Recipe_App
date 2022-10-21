@@ -1,22 +1,31 @@
 .footer {
 	background-color: var(--secondary-color);
 	text-align: center;
+	justify-content: center;
 	padding: 3rem 0rem;
 	margin-top: 200px;
 	position: sticky;
 }
 .title{
-	max-width: 500px;
+	width: 100%;
 	font-size: clamp(2.5rem, 5vw, 7rem);
 	font-family: 'Mirza', sans-serif;
 	line-height: 0.9em;
-	text-transform: capitalize;
-	margin-left: 170px;
 	text-align: center;
-	align-content: center;
+	margin-bottom: 5px;
+	text-transform: capitalize;
 	color: var(--primary-color);
 }
 .copyright {
 	margin-top: 1.2rem;
 	font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+	.footer{
+		align-items: center;
+		padding: 1rem 0;
+	}
+	.title{
+		font-size: 30px;
+	}
 }

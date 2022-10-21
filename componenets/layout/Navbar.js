@@ -6,21 +6,23 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Link href="/">
-        <a className={styles.title}>
-          <h1>Food Gala</h1>
+        <a>
+          <h1 className={styles.title}>Food Gala</h1>
         </a>
       </Link>
-      <ul className={styles.navLinks}>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/meals">Meals</Link>
-        </li>
-        <li>
-          <Link href="/savedMeals">Saved List</Link>
-        </li>
-      </ul>
+      <div className={styles.navLinks}>
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/meals">Meals</Link>
+          </li>
+          <li>
+            <Link href="/savedMeals">Saved List</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   )
 }

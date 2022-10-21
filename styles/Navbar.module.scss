@@ -5,8 +5,7 @@
 	padding: 1rem 0;
 }
 .title{
-max-width: 450px;
-	font-size: clamp(2.5rem, 5vw, 7rem);
+	font-size: clamp(2.5rem, 5vw, 6rem);
 	font-family: 'Mirza', sans-serif;
 	line-height: 0.9em;
 	text-transform: capitalize;
@@ -14,12 +13,32 @@ max-width: 450px;
 }
 .navLinks {
 	display: flex;
-	gap: 3rem;
+	justify-content: space-between;
+	margin-right: 200px;
 	li {
 		display: inline-block;
 	}
 	a {
 		font-size: 1.8rem;
+		align-items: center;
+		margin-right: 50px;
 		display: inline-block;
+	}
+}
+@media screen and (max-width: 768px) {
+	.navbar{
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 0;
+	}
+	.title{
+		font-size: 30px;
+	}
+	.navLinks {
+		a {
+			margin-right: 20px;
+			align-items: center;
+			display: inline-block;
+		}
 	}
 }
