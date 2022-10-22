@@ -14,7 +14,7 @@
 .navLinks {
 	display: flex;
 	justify-content: space-between;
-	margin-right: 200px;
+	margin-right: 20%;
 	li {
 		display: inline-block;
 	}
@@ -35,6 +35,9 @@
 		font-size: 30px;
 	}
 	.navLinks {
+		margin-right: 10px;
+		margin-left: 10px;
+
 		a {
 			margin-right: 20px;
 			align-items: center;
