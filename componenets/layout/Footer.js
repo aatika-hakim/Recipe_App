@@ -8,7 +8,7 @@ function Footer() {
       <h1 className={styles.title}>Food Gala</h1>
       <Text>Find the perfect meal recipe for you</Text>
       <Text className={styles.copyright}>
-        © “Food Gala” 2022 All right reserved.
+        © “Food Gala” 2022 All right reserved. Designed and developed by <a href="http://aatikahakim90@gmail.com"  Aatika Hakim />
       </Text>
     </footer>
   )
