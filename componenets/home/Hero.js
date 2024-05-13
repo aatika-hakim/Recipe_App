@@ -19,6 +19,9 @@ function Hero() {
               Explore Meals
             </ButtonWithLink>
             <ButtonWithLink link="/savedMeals">Saved Meals</ButtonWithLink>
+            <ButtonWithLink link="/savedMeals">Home</ButtonWithLink>
+            <ButtonWithLink link="/savedMeals">About</ButtonWithLink>
+            <ButtonWithLink link="/savedMeals">Contact</ButtonWithLink>
           </div>
         </div>
       </div>

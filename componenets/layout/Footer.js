@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <h1 className={styles.title}>Food Gala</h1>
-      <Text className='text'>Find the perfect meal recipe for you</Text>
+      <Text>Find the perfect meal recipe for you</Text>
       <Text className={styles.copyright}>
         © “Food Gala” 2022 All right reserved.
       </Text>
