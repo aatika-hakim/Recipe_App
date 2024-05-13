@@ -3,7 +3,6 @@ import Text from '../text/Text'
 import Title from '../text/Title'
 import styles from '../../styles/About.module.scss'
 import Image from 'next/image'
-import pic from '../../public/resturant.jpg'
 
 function About() {
   return (
@@ -26,7 +25,7 @@ function About() {
           </Text>
         </div>
         <div className={styles.img}>
-          <Image src={pic} alt='about us' />
+        
         </div>
       </div>
     </section>
