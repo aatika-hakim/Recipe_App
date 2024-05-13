@@ -21,6 +21,12 @@ function Navbar() {
           <li>
             <Link href="/savedMeals">Saved List</Link>
           </li>
+          <li>
+            <Link href="/savedMeals">About</Link>
+          </li>
+          <li>
+            <Link href="/savedMeals">Contact</Link>
+          </li>
         </ul>
       </div>
     </nav>
